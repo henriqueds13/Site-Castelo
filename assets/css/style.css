@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 /*VARIÁVEIS*/
 :root{
@@ -25,7 +26,6 @@ body{
     justify-content: space-between;
     align-items: center;
     height:35px;
-    max-width: 1140px;
 }
 .line--right,
 .header--right{
@@ -68,7 +68,6 @@ body{
     justify-content: space-between;
     align-items: center;
     height:115px;
-    max-width: 1140px;
 }
 .logo img{
     width:200px;
@@ -110,4 +109,63 @@ nav .active, nav li a:hover{
 .header--right div:hover{
     background-color: var(--pcolor);
     color: #FFF;
+}
+
+/*SLIDE SECTIONS*/
+
+#slider{
+    width: 100vw;
+    height:630px;
+    overflow: hidden;
+}
+.slider--area{
+    width: calc(100vw*3);
+    height:100%;
+    display: flex;
+    transition: all ease 0.3s;
+
+}
+.slider--item{
+    width: 100vw;
+    height:inherit;
+    background-position: center;
+    background-size: cover;
+}
+.slider--information{
+    position: absolute;
+    height:630px;
+    display: flex;
+    flex-direction: column; 
+}
+.info-area1{
+    flex:1;
+}
+.info-area2{
+    flex:2;
+    color:#FFF;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info-area2 h6{
+    font-size:18px;
+    margin-right:auto;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.slider--text2{
+    display: flex;
+    align-items: center;
+}
+.slider--text2 img{
+    height:50px;
+    margin-right: 10px;
+}
+.slider--text2 a{
+    text-decoration:none;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: bold;
 }
