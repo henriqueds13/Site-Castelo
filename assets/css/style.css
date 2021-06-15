@@ -137,19 +137,17 @@ nav .active, nav li a:hover{
     display: flex;
     flex-direction: column; 
 }
+
 .info-area1{
-    flex:1;
-}
-.info-area2{
-    flex:2;
+    flex:3;
     color:#FFF;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
-.info-area2 h6{
+.info-area1 h6{
     font-size:18px;
     margin-right:auto;
     letter-spacing: .15em;
@@ -168,4 +166,65 @@ nav .active, nav li a:hover{
     color: #FFF;
     font-size: 48px;
     font-weight: bold;
+    transition: all 0.3s;
+}
+.slider--text2 a:hover{
+    color: var(--pcolor);
+}
+.slider--buttons{
+    display:flex;
+    padding:auto;
+    margin: 20px 0;
+}
+.slider--button1, .slider--button2{
+    display: flex;
+    margin: 20px 30px 20px 0;
+    padding:20px 20px;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.slider--button1{
+    background-color: var(--pcolor);
+    transition: all 0.3s;
+}
+.slider--button1:hover{
+    background-color: #224910;
+}
+.slider--button2{
+    background-color: #224910;
+    transition: all 0.3s;
+}
+.slider--button2:hover{
+    background-color: var(--pcolor);
+}
+.slider--button-img{
+    height: 20px;
+    margin:  0 0 0 10px;
+}
+.slider--button1 h6, .slider--button2 h6{
+    font-size:18px;
+    margin-right:auto;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.info-area2{
+    flex:1;
+    display: flex;
+}
+
+.slider--controls{
+    display:flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+.slider--controls h6{
+    font-size:23px;
+    color: white;
+}
+.slider--controls img{
+    cursor: pointer;
 }
