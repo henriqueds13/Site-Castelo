@@ -113,13 +113,12 @@ nav .active, nav li a:hover{
 
 /*SLIDE SECTIONS*/
 
-#slider{
+.slider{
     width: 100vw;
-    height:630px;
+    height:700px;
     overflow: hidden;
 }
 .slider--area{
-    width: calc(100vw*3);
     height:100%;
     display: flex;
     transition: all ease 0.3s;

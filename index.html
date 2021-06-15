@@ -54,7 +54,7 @@
             </div>
         </div>
     </header>
-    <section id="slider">
+    <section class="slider">
         <div class="container">
             <div class="slider--information">
                 <div class="info-area1">
@@ -76,9 +76,9 @@
                 </div>
                 <div class="info-area2">
                     <div class="slider--controls">
-                        <img class="slider--voltar" onclick="" src="assets/icons/seta-esquerda.png" alt="">
-                        <h6>01/04</h6>
-                        <img class="slider--voltar" onclick="" src="assets/icons/seta-direita.png" alt="">
+                        <img class="slider--voltar" onclick="goPrev()" src="assets/icons/seta-esquerda.png" alt="">
+                        <h6 class="sInfo">01/04</h6>
+                        <img class="slider--voltar" onclick="goNext()" src="assets/icons/seta-direita.png" alt="">
                     </div>
                 </div>
             </div>
@@ -87,7 +87,9 @@
             <div class="slider--item" style='background-image: url(assets/images/slide4.jpg)'></div>
             <div class="slider--item" style='background-image: url(assets/images/motoserra3.jpg)'></div>
             <div class="slider--item" style='background-image: url(assets/images/slide3.jpg)'></div>
+            <div class="slider--item" style='background-image: url(assets/images/lavadora.jpg)'></div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
