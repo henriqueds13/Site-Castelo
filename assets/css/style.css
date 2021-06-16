@@ -227,3 +227,21 @@ nav .active, nav li a:hover{
 .slider--controls img{
     cursor: pointer;
 }
+
+/* AREA 1*/
+
+.area1{
+    display: flex;
+
+}
+.area1--info{
+    margin-left: 100px;
+}
+.area1--img{
+    width: 45vw;
+    height: 530px;
+    background-image: url("../images/tools.png");
+    background-size: cover;
+    position: absolute;
+    left: 55%;
+}
