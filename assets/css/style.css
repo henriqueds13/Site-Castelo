@@ -261,7 +261,8 @@ nav .active, nav li a:hover{
     height:530px;
 }
 .area1--info span,
-.area2--info span{
+.area2--info span,
+.area2--info-fim span{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.625;
@@ -271,7 +272,7 @@ nav .active, nav li a:hover{
 .area1--img{
     width: 40vw;
     height: 530px;
-    background-image: url("../images/tools.png");
+    background-image: url("../images/tools2.png");
     background-size: cover;
     position: absolute;
     right:0px;
@@ -282,14 +283,31 @@ nav .active, nav li a:hover{
     grid-template-columns: repeat(4,1fr);
     height:300px;
 }
+.area2--info{
+    border-right: 1px solid #e8e8e8;
+    text-decoration: none;
+}
 .area2--div{
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
-
+    height:300px;
+    padding-top: 15px;
 }
 .area2--div img{
     width:80px;
 }
+.area2--div h3{
+    font-family: "Mallana", sans-serif;
+    font-size: 35px;
+    color: var(--pcolor);
+    line-height: 1.333;
+    font-weight: normal;
+}
+.area2--div span{
+    margin: 0 50px 30px 50px;
+    padding:0;
+    text-align: center;
+}
+
