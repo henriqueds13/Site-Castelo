@@ -23,10 +23,10 @@ body{
 }
 
 h2{
-    font-family: "Mallana", sans-serif;
+    font-family: "Mallanna", sans-serif;
     font-weight: 400;
     line-height: 1.2;
-    font-size: 38px;
+    font-size: 42px;
     color: #101d37;
     text-align: left;
     margin-bottom:auto;
@@ -120,15 +120,15 @@ nav .active, nav li a:hover{
     color: var(--pcolor);
 }
 
-.header--right div{
+.button{
     font-family: open sans-serif;
     font-size: 15px;
     font-weight: bold;
-    padding: 15px 25px;
+    padding: 12px 31px;
     border: 2px solid var(--pcolor);
     transition: all 0.3s;
 }
-.header--right div:hover{
+.button:hover{
     background-color: var(--pcolor);
     color: #FFF;
 }
@@ -338,28 +338,42 @@ nav .active, nav li a:hover{
 }
 
 #l1, #l2, #l3, #l4, #l5, #l6, #l7{
-    padding: 10px 0;
+    padding: 0;
     border-right: 1px solid #e9e8e3;
-    width:13vw;
+    width:16vw;
     cursor: pointer;
     list-style: none;
+    font-family: "Mallanna", sans-serif;
+    color: var(--fcolor);
+    font-size: 22px;
 }
 #active{
-    padding: 10px 0;
+    padding:  0;
     box-sizing: border-box;
     border-right: 2px solid var(--bcolor);
-    width:13vw;
+    width:16vw;
     cursor: pointer;
     list-style: none;
+    font-family: "Mallanna", sans-serif;
+    color: #141e1f;
+    font-size: 22px;
 }
 #lista li:hover{
     box-sizing: border-box;
     border-right: 2px solid var(--bcolor);
+    color: #141e1f;
 }
-
+#lista{
+    padding:0;
+}
 .area3--desc{
     display: flex;
     flex-direction: column;
+}
+.area3--desc h6{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #101D37;
 }
 .area3--desc-infoarea{
     display: grid;
@@ -368,11 +382,34 @@ nav .active, nav li a:hover{
 }
 .infoarea--img{
     background-image: url(../images/slide5.jpg);
-    height:100%;
+    height:80%;
     background-size: cover;
-    background-position: center;
+    background-position:center;
     margin-right: 30px;
 }
+.infoarea--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.infoarea--info h4{
+    font-family: "Mallanna", sans-serif;
+    font-size: 22px;
+    color: #101d37;
+    font-weight:500;
+    line-height: 1.625;
+    margin:0;
+}
+.infoarea--text{
+    font-family:"Opens Sans", sans-serif;
+    color: var(--fcolor);
+    line-height: 1.625;
+    font-size: 16px;
+}
+.infoarea--info .button{
+    width: fit-content;
 
+}
 
 
