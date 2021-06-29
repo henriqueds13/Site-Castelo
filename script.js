@@ -35,31 +35,58 @@ document.querySelector('.slider--area').style.width =
         console.log(slideInfo);
     }
 
-    let n= "2";
+    let n= "l0";
+    let activen = "l0";
+   
 var el = document.getElementById('lista');
 el.addEventListener('click', function(e){
     n = e.target.id;
+    if(n != 'active'){
+        console.log(n)
+    document.getElementById('active').setAttribute('id', activen);
+    document.getElementById(n).setAttribute('id', 'active');
+    activen = n;
+    }
     switch(n){
+        case 'l0':
+            document.querySelector('.infoarea--title').innerHTML = "Cortadores de grama"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/slide5.jpg');
+            break;
         case 'l1':
-            console.log('primeiro');
+            document.querySelector('.infoarea--title').innerHTML = "Roçadeiras costais"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/rocadeira5.jpg');
             break;
         case 'l2':
-            console.log('segundo');
+            document.querySelector('.infoarea--title').innerHTML = "Motoserras"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/motoserras.jpg');
             break;
         case 'l3':
-            console.log('terceiro');
+            document.querySelector('.infoarea--title').innerHTML = "Motobombas"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/bomba.jpg');
             break;
         case 'l4':
-            console.log('quarto');
+            document.querySelector('.infoarea--title').innerHTML = "Lavadoras de alta pressão"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/lavadora2.jpg');
             break;
         case 'l5':
-            console.log('quinto');
+            document.querySelector('.infoarea--title').innerHTML = "Ferramentas elétricas"
+            // document.querySelector('.infoarea--text').innerHTML = "..."; 
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/ferramentas.jpg');
             break;
         case 'l6':
-            console.log('sexto');
+            document.querySelector('.infoarea--title').innerHTML = "Rebobinamento de motores"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/motor.jpg');
             break;
         case 'l7':
-            console.log('setimo');
+            document.querySelector('.infoarea--title').innerHTML = "Geradores de energia"
+            // document.querySelector('.infoarea--text').innerHTML = "...";
+            document.querySelector('.infoarea--img').setAttribute('src','assets/images/gerador.jpg');
             break;
     }
 });
