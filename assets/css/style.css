@@ -121,13 +121,15 @@ nav .active, nav li a:hover{
 }
 
 .button{
-    font-family: open sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: bold;
     padding: 12px 31px;
     border: 2px solid var(--pcolor);
     transition: all 0.3s;
     width: fit-content;
+    cursor: pointer;
+    border-radius: 3px;
 }
 .button:hover{
     background-color: var(--pcolor);
@@ -205,6 +207,7 @@ nav .active, nav li a:hover{
     align-items: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    border-radius: 3px;
 }
 .slider--button1{
     background-color: var(--pcolor);
@@ -444,9 +447,79 @@ nav .active, nav li a:hover{
     color: var(--bcolor);
     width: fit-content;
     background-color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
 }
 .area4-button:hover{
     background-color:transparent;
     color: #FFF;
     border-color:#FFF;
+}
+
+/* AREA 5 */
+
+.area5{
+    height: 1130px;
+    padding-top: 50px;
+}
+.area5-vendainfo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.venda-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:400px;
+    align-items: flex-start;
+    width: 257px;
+    margin-top:50px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.venda-info:hover{
+    box-shadow: 0px 1px 5px ;
+}
+.img-venda1{
+    height:150px;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+.img-venda{
+    height: 150px;
+}
+
+.preco-venda{
+    display: flex;
+    color: var(--pcolor);
+    font-weight: bold;
+    margin-top:20px;
+}
+.preco-info{
+    font-size: 30px;
+    margin:0;
+    margin-left: 3px;
+}
+.area5--div .button{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #000;
+}
+.area5--div .button:hover{
+    color: #FFF;
+}
+
+/* AREA6 */
+
+.area6{
+    height: 130px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.area6 img{
+    height: 120px;
 }
