@@ -288,7 +288,7 @@ nav .active, nav li a:hover{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     height:300px;
-    margin-bottom: 44px;
+    margin-bottom: 20px;
 }
 .area2--div,
 .area2--div-fim{
@@ -330,7 +330,7 @@ nav .active, nav li a:hover{
 /* AREA3 */
 
 .area3{
-    background-color: #f6f5f0;
+    background-color: #f5f5f5;
 }
 .area3--service{
     display:flex;
@@ -522,4 +522,34 @@ nav .active, nav li a:hover{
 }
 .area6 img{
     height: 120px;
+}
+/* FOOTER */
+footer{
+    height: 770px;
+    background-color:#f5f5f5;
+}
+.footer{
+    display: flex;
+}
+.f-phone,
+.f-whats,
+.f-map,
+.f-email{
+    display: flex;
+    align-items: center;
+}
+.footer-hour{
+    display: flex;
+}
+.footer-hour p{
+    margin: 0px;
+}
+.footer--contact img{
+    height: 20px;
+    margin-right: 20px;
+}
+.footer--mapa img{
+    width: 720px;
+    height: 545px;
+    margin:50px 0 0 100px;
 }
