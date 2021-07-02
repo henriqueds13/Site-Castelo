@@ -91,3 +91,21 @@ el.addEventListener('click', function(e){
     }
 });
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if(document.body.scrollTop > 34 || document.documentElement.scrollTop > 34) {
+        document.querySelector('.header--area').style.height = "70px";
+        document.querySelector('.logo img').style.width = "150px";
+        document.querySelector('.line').style.height = "0"
+        document.querySelector('.line2').style.boxShadow = "0px 5px 20px";
+
+
+    } else{
+        document.querySelector('.header--area').style.height = "115px";
+        document.querySelector('.logo img').style.width = "200px";
+        document.querySelector('.line').style.height= "35px"
+        document.querySelector('.line2').style.boxShadow = "0px 0px 0px";
+    }
+}
+

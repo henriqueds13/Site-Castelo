@@ -41,6 +41,7 @@ h2{
 
 .line{
     background-color: #f6f5f0;
+    height:35px;
 }
 
 .header--line{
@@ -75,6 +76,13 @@ h2{
     justify-content: space-between;
     flex:2;
 }
+.line2{
+    position:fixed;
+    background-color:#FFF;
+    width:100%;
+    z-index: 99;
+    box-shadow: 0px;
+}
 .social-logos{
     display:flex;
     justify-content: space-between;
@@ -90,6 +98,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     height:115px;
+    background-color: #FFF;
 }
 .logo img{
     width:200px;
@@ -142,6 +151,7 @@ nav .active, nav li a:hover{
     width: 100vw;
     height:700px;
     overflow: hidden;
+    margin-top:115px;
 }
 .slider--area{
     height:100%;
@@ -260,7 +270,7 @@ nav .active, nav li a:hover{
     display: flex;
 }
 .area1--info{
-    margin-right: 20px;
+    margin: 50px 20px 0 0;
     width: 37vw;
     height:530px;
 }
@@ -524,8 +534,9 @@ nav .active, nav li a:hover{
     height: 120px;
 }
 /* FOOTER */
+
 footer{
-    height: 770px;
+    height: 650px;
     background-color:#f5f5f5;
 }
 .footer{
@@ -544,6 +555,9 @@ footer{
 .footer-hour p{
     margin: 0px;
 }
+.footer--contact .button{
+    margin-top:30px;
+}
 .footer--contact img{
     height: 20px;
     margin-right: 20px;
@@ -552,4 +566,8 @@ footer{
     width: 720px;
     height: 545px;
     margin:50px 0 0 100px;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
 }
