@@ -571,3 +571,81 @@ footer a{
     text-decoration: none;
     color: #000;
 }
+
+/* MEDIA */
+
+@media (min-width: 768px) and (max-width: 1140px){
+    .line{
+        padding: 0 15px;
+    }
+    .line--left{
+        flex:3;
+    }
+    .header--area{
+        padding: 0 40px;
+    }
+    .slider{
+        height: 500px;
+    }
+    .slider--information{
+        margin-left: 50px;
+    }
+    .area1{
+        justify-content: center;
+    }
+    .area1--img{
+        display:none;
+    }
+    .area1--info{
+        width: 60vw;
+        margin: 0px 20px;
+        height: 450px;
+    }
+    .area2{
+        height: 700px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .area3--div{
+        height:700px;
+    }
+    .area3--info{
+        padding: 0 50px;
+    }
+    #l0, #l1, #l2, #l3, #l4, #l5, #l6, #l7, #active{
+        width: 22vw;
+    }
+    .infoarea--info{
+        width:60%;
+        margin-left: 30px;
+    }
+    .infoarea--img{
+        height:auto;
+        width:100%;
+    }
+    .area5{
+        height:1100px;
+    }
+    .area5--div{
+        padding: 0 50px;
+    }
+    .q7, .q8{
+        display:none;
+    }
+.area4--div{
+    margin-left: 50px;
+}
+#area6-7, #area6-9{
+    display:none;
+}
+footer{
+    height:630px;
+}
+.footer--contact{
+    margin-left:50px;
+}
+.footer--mapa img{
+    width: 500px;
+    height:auto;
+    margin: 30px 20px;
+}
+}

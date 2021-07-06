@@ -1,14 +1,14 @@
 let totalSlides = document.querySelectorAll('.slider--item').length;
 let currentSlide = 0;
-var slideInfo =  document.getElementsByClassName('.sInfo');
+var slideI= 0;
+var slideN = 0;
 
 let sliderWidth = document.querySelector('.slider').clientWidth;
 
 document.querySelector('.slider--area').style.width = 
     `${sliderWidth * totalSlides}px` ;
 
-    console.log(sliderWidth);
-    console.log(totalSlides);
+  
 
     function goPrev(){
         currentSlide --;
@@ -31,9 +31,12 @@ document.querySelector('.slider--area').style.width =
         let newMargin = (currentSlide * sliderItemWidth);
         document.querySelector('.slider--area').style.marginLeft = 
         `-${newMargin}px`;
-        slideInfo.innerHTML = currentSlide.toString();
-        console.log(slideInfo);
+        slideN = currentSlide+1;
+        slideI = "0"+ slideN +"/04"
+        document.querySelector('.sInfo').innerHTML = slideI;
     }
+
+    setInterval(goNext,2000);
 
     let n= "l0";
     let activen = "l0";
