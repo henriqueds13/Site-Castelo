@@ -103,6 +103,7 @@ function scrollFunction() {
         document.querySelector('.line2 .logo img').style.width = "150px";
         document.querySelector('.line').style.height = "0"
         document.querySelector('.line2').style.boxShadow = "0px 5px 20px";
+        document.querySelector('.line3').style.boxShadow = "0px 5px 20px";
         document.querySelector('.line3 .header--area').style.height = "70px";
         document.querySelector('.line3 .logo img').style.display = "none";
 
@@ -112,9 +113,17 @@ function scrollFunction() {
             document.querySelector('.logo img').style.width = "200px";
             document.querySelector('.line').style.height= "35px"
             document.querySelector('.line2').style.boxShadow = "0px 0px 0px";
+            document.querySelector('.line3').style.boxShadow = "0px 0px 0px";
             document.querySelector('.line3 .header--area').style.height = "170px";
             document.querySelector('.line3 .logo img').style.display = "inline";
         }
     }
-
+function mobMenu(x) {
+    x.classList.toggle("change");
+    if(document.querySelector('.linem-inf').style.display == 'none'){
+    document.querySelector('.linem-inf').style.display="flex"
+    } else{  
+        document.querySelector('.linem-inf').style.display="none"
+    }
+}
 
