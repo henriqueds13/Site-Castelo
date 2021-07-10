@@ -83,9 +83,10 @@ h2{
     z-index: 99;
     box-shadow: 0px;
 }
-.line-m{
+.linem-m{
     display:none;
     position:fixed;
+    top:0px;
     width:100vw;
     height: 55px;
     background-color: #f6f5f0;
@@ -93,7 +94,7 @@ h2{
     z-index: 99;
 }
 .mob-menu{
-    display: inline-block;
+    display:inline-block;
     cursor: pointer;
     margin-top:6px;
 }
@@ -104,7 +105,7 @@ h2{
     margin:6px 20px;
     transition: 0.4s;
 }
-.line-m .logo img{
+.linem-m .logo img{
     height: 40px;
     width: auto;
     margin: 5px 10px;
@@ -497,6 +498,38 @@ nav .active, nav li a:hover{
     line-height: 1.625;
     font-size: 16px;
 }
+.area3-mobile{
+    display:none;
+}
+.area3m{
+    border: solid 1px gray;
+    margin: 5px 10px 0;
+    padding: 20px 10px;
+}
+.area3m-cab{
+    display: flex;
+    justify-content: space-between;
+    width:50vw;
+}
+.area3m-seta{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;;
+}
+#traco1, #traco2{
+    width:5px;
+    height:2px;
+    background-color: #000;   
+}
+#traco1{
+    transform:skewY(45deg);
+}
+#traco2{
+    transform:skewY(-45deg);
+}
+.infoarea--info .l1{
+    display: inline;
+}
 
 /* AREA 4 */
 
@@ -817,12 +850,9 @@ footer a{
     .line, .line3{
         display:none;
     }
-    .line-m{
+    .linem-m{
         display:flex;
         justify-content: space-between;
-    }
-    .slider{
-        margin-top:0;
     }
     .line--right{
         display: flex;
@@ -835,5 +865,71 @@ footer a{
         flex-direction: column;
         justify-content: space-around;
         padding: 10px 15px 0 10px;
+    }
+    .slider{
+        margin-top:55px;
+    }
+    .slider--information{
+        height:500px;
+        justify-content: center;
+        margin-left: 85px;
+        align-items: center;
+    }
+    .info-area1{
+        align-items: center;
+    }
+    .info-area1 h6{
+        font-size:10px;
+        margin: 0 0 20px 0;
+    }
+    .slider--text2 img{
+        height:35px;
+    }
+    .slider--text2 a{
+        font-size: 35px;
+    }
+    .slider--buttons{
+        flex-direction: column;
+    }
+    .slider--button1, .slider--button2{
+        margin: 15px 0px;
+        padding:15px 15px;
+        justify-content: center;
+    }
+    .slider--button1 h6, .slider--button2 h6{
+        margin-bottom: 0px;
+    }
+    .area1--info{
+        height: auto;
+        width:90vw;
+    }
+    .area1--info span{
+        text-align: center;
+    }
+    .area2{
+        grid-template-columns: 1fr;
+        height:auto;
+    }
+    .area3--div{
+        display:none;
+    }
+    .area3-mobile{
+        display:inline;
+    }
+    .area5{
+        height: 2150px;
+    }
+    .area5-vendainfo{
+        justify-content: center;
+    }
+    .venda-info{
+        align-items: center;
+    }
+    .venda-info h4{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .venda-info.q5, .venda-info.q6{
+        display:none;
     }
 }

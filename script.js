@@ -127,3 +127,6 @@ function mobMenu(x) {
     }
 }
 
+function abreAba(x){
+    document.querySelector('.m1').style.display ="none"
+}
